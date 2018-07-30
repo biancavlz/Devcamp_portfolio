@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/biancavlz/copyright_renderer_tool
+  revision: 115778e9fbd7a05d0f75bd112bc669c599ee9312
+  specs:
+    copyright_renderer_tool (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -205,6 +211,7 @@ DEPENDENCIES
   bootstrap (~> 4.1.3)
   byebug
   coffee-rails (~> 4.2)
+  copyright_renderer_tool!
   devise (~> 4.4, >= 4.4.3)
   friendly_id (~> 5.1.0)
   jbuilder (~> 2.5)

@@ -13,4 +13,8 @@ module ApplicationHelper
       content_tag(:p, source_greeting, class: 'source-greeting')
     end
   end
+
+  def copyright_generator
+    CopyrightRendererTool::Renderer.copyright "Bianca Velázquez", "All rights reserved"
+  end
 end
