@@ -1,8 +1,18 @@
-<h1>Hi, <%= current_user.first_name %></h1>
+<!-- <h1>Hi, <%= current_user.first_name %></h1>
 <p>Find me in app/views/pages/home.html.erb</p>
 
 <h2>Posts</h2>
 <%= @posts %>
 
 <h2>Skills</h2>
-<%= @skills %>
+<%= @skills %> -->
+
+<main role="main" class="inner cover">
+  <h1 class="cover-heading">My page</h1>
+  <p class="lead">
+    TODO: Add a description
+  </p>
+  <p class="lead">
+    <%= link_to "About Me", about_me_path, class: "btn btn-lg btn-secondary" %>
+  </p>
+</main>
