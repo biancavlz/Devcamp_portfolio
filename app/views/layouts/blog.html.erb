@@ -21,8 +21,11 @@
       <div class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
         <div class="col-md-6 px-0">
           <h1 class="display-4 font-italic">Title of a longer featured blog post</h1>
-          <p class="lead my-3">Multiple lines of text that form the lede, informing new readers quickly and efficiently about what's most interesting in this post's contents.</p>
-          <p class="lead mb-0"><a href="#" class="text-white font-weight-bold">Continue reading...</a></p>
+          <p class="lead my-3">Multiple lines of text that form the lede, informing new readers quickly and efficiently about what's most interesting in this post's contents.
+          </p>
+          <p class="lead mb-0">
+            <a href="#" class="text-white font-weight-bold">Continue reading...</a>
+          </p>
         </div>
       </div>
     </div>
@@ -31,12 +34,27 @@
       <div class="row">
         <!-- <p class="notice"><%= notice %></p>
         <p class="alert"><%= alert %></p> -->
-        <%= yield %>
+        <div class="col-md-8 blog-main">
+          <h3 class="pb-3 mb-4 font-italic border-bottom">My Blog</h3>
+          
+          <%= link_to 'Write a new Blog', new_blog_path if logged_in?(:side_admin) %>
+    
+          <%= yield %>
+          
+          <nav class="blog-pagination">
+            <a class="btn btn-outline-primary" href="#">Older</a>
+            <a class="btn btn-outline-secondary disabled" href="#">Newer</a>
+          </nav>
+          
+          <p id="notice"><%= notice %></p>
+        </div>
 
         <aside class="col-md-4 blog-sidebar">
           <div class="p-3 mb-3 bg-light rounded">
             <h4 class="font-italic">About</h4>
-            <p class="mb-0">Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+            <p class="mb-0">
+              Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.
+            </p>
           </div>
 
           <div class="p-3">
@@ -65,7 +83,7 @@
               <li><a href="#">Facebook</a></li>
             </ol>
           </div>
-        </aside><!-- /.blog-sidebar -->
+        </aside>
         
         <%= source_helper('blog') %> 
         <%= render 'shared/application_footer' %>
