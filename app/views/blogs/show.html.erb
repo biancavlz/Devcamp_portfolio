@@ -1,14 +1,8 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @blog.title %>
+<h2><%= @blog.title %></h2>
+<p class="blog-post-meta">
+  <%= link_to 'Edit', edit_blog_path(@blog) if logged_in?(:side_admin) %> |
+  <%= link_to 'Back', blogs_path %>
 </p>
-
-<p>
-  <strong>Body:</strong>
-  <%= @blog.body %>
-</p>
-
-<%= link_to 'Edit', edit_blog_path(@blog) if logged_in?(:side_admin) %> |
-<%= link_to 'Back', blogs_path %>
+<p><%= @blog.body %></p>
