@@ -2,5 +2,7 @@
 
 <%= render 'form', blog: @blog %>
 
-<%= link_to 'Show', @blog %> |
-<%= link_to 'Back', blogs_path %>
+<p class="blog-post-meta">
+  <%= link_to 'Show', @blog %> |
+  <%= link_to 'Back', blogs_path %>
+</p>
