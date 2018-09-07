@@ -27,8 +27,7 @@
         <div class="col-md-8 blog-main">
           <%= render 'shared/blog_masthead' %>    
           <%= yield %>
-          
-          <p id="notice"><%= notice %></p>
+          <%= alerts %>  
         </div>
 
         <%= render 'shared/blog_sidebar' %>
