@@ -23,7 +23,6 @@ class PortfoliosController < ApplicationController
 
   def new
     @portfolio_item = Portfolio.new
-    3.times { @portfolio_item.technologies.build } #hardcoded, will be replaced with js later
   end
 
   def create
