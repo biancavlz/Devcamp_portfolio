@@ -1,2 +1,10 @@
-<h3 class="pb-3 mb-4 font-italic border-bottom">My Blog</h3>
-<%= link_to 'Write a new Blog', new_blog_path if logged_in?(:side_admin) %>
+<div class="container border-bottom">
+  <div class="row ">
+    <div class="col-6 pt-1">
+      <h3 class="font-italic ">My Blog</h3>
+    </div>
+    <div class="col-6 d-flex justify-content-end align-items-center">
+      <%= link_to 'Write a new Blog', new_blog_path if logged_in?(:side_admin) %>
+    </div>
+  </div>
+</div>
