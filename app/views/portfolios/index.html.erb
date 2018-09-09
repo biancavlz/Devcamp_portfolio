@@ -1,6 +1,8 @@
  <div class="album py-5 bg-light">
   <div class="container">
-    <%= link_to "Create new item", new_portfolio_path if logged_in?(:side_admin) %>
+    <div class="new-portfolio col-12 d-flex justify-content-end align-items-center">
+      <%= link_to "Create a new Portfolio", new_portfolio_path if logged_in?(:side_admin) %>
+    </div>
     <div class="row <%= "sortable" if logged_in?(:side_admin) %>">
         <%= render partial: 'portfolio_item', collection: @portfolio_items %>
     </div>
