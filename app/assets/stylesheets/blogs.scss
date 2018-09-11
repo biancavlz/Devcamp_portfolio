@@ -146,5 +146,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .card-body {
-  padding-left: 30px;
+  padding-left: 45px;
+  padding-right: 40px;
+}
+
+.card-img-left {
+  margin: 15px;
+}
+
+.comment-attribution {
+  font-size: .8em;
+  font-style: italic;
+}
+
+.comment-name {
+  font-weight: 700;
 }
