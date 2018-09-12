@@ -3,8 +3,11 @@
     <div class="col-6 pt-1">
       <h3 class="font-italic ">My Blog</h3>
     </div>
-    <div class="col-6 d-flex justify-content-end align-items-center">
-      <%= link_to 'Write a new Blog', new_blog_path if logged_in?(:side_admin) %>
+    <div class="col-3 d-flex justify-content-end align-items-center">
+      <span><%= link_to 'Write a new Blog', new_blog_path if logged_in?(:side_admin) %></span>
+    </div>
+    <div class="col-3 d-flex justify-content-end align-items-center">
+      <span><%= link_to 'See all topics', topics_path %></span>
     </div>
   </div>
 </div>
