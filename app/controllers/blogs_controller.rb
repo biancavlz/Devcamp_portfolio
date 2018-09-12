@@ -8,9 +8,13 @@ class BlogsController < ApplicationController
   # GET /blogs
   # GET /blogs.json
   def index
-    @blogs = Blog.page(params[:page]).per(3)
+    if logged_in?(:side_admin)
+      @blogs = Blog.recent.page(params[:page]).per(3)
+    else
+      @blogs = Blog.recent.published.page(params[:page]).per(3)
+    end
+    
     @skills = Skill.all
-
     @page_title = "My Portfolio Blog"
   end
 
