@@ -10,13 +10,7 @@
   
   <p><%= markdown @blog.body %></p>
 
-  <p class="blog-post-meta">
-    <% if logged_in?(:side_admin) %>
-    <%= link_to 'Edit', edit_blog_path(@blog) %> |
-    <%= link_to 'Delete', @blog, method: :delete, data: { confirm: 'Are you sure you want to delete this post?' } %>
-    <% end %>
-  </p>
-
+  <%= render partial: 'blogs/admin_actions', locals: { blog: @blog } %>
   <%= render '/comments/comment_form' %>
   
   <div id="comments" data-blog-id="<%= @blog.id %>">

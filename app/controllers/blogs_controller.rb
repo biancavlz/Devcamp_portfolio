@@ -89,7 +89,7 @@ class BlogsController < ApplicationController
       @blog.draft!
     end
 
-    redirect_to blogs_url, notice: 'Blog status was successfully updated.'
+    redirect_to blogs_url, notice: "Blog to #{@blog.status.capitalize} status was successfully updated."
   end
 
   private

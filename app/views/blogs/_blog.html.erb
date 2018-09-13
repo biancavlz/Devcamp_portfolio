@@ -1,14 +1,7 @@
 <div class="blog-post">
   <h2 class="blog-post-title"><%= link_to blog.title, blog %></h2>
   <p class="blog-post-meta">published <%= distance_of_time_in_words(blog.created_at, Time.now)%> ago</p>
-  
-  <p class="blog-post-meta">
-    <% if logged_in?(:side_admin) %>
-      <%= link_to blog.status.capitalize, toggle_status_blog_path(blog) %> |
-      <%= link_to 'Edit', edit_blog_path(blog) %> |
-      <%= link_to 'Delete', blog, method: :delete, data: { confirm: 'Are you sure?' } %>
-    <% end %>
-  </p>
-  
   <p><%= markdown blog.body %></p>
+
+  <%= render partial: 'blogs/admin_actions', locals: { blog: blog } %>
 </div>
