@@ -5,6 +5,22 @@
       <div class="row">
         <div class="col-md-5">
         <%= image_tag "profile.jpg", width: 300, alt: "Profile Image", class: "profile-image" %>
+
+          <div class="skills">
+            <% @skills.each do |skill| %>
+              <h3><%= skill.title %></h3>
+              <div class="progress">
+                <div 
+                  class="progress-bar progress-bar-striped bg-info"
+                  role="progressbar"
+                  aria-valuenow="<%= skill.percent_utilized %>"
+                  aria-valuemax="100"
+                  style= "width: <%= skill.percent_utilized %>%"
+                >
+                </div>
+              </div>
+            <% end %>
+          </div>
         </div>
 
         <div class="col-md-7">
