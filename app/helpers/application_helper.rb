@@ -8,10 +8,10 @@ module ApplicationHelper
     end
   end
 
-  def source_helper(layout_name)
+  def source_helper(styles)
     if session[:source] 
-      source_greeting = "Thanks for visiting me from #{session[:source]}, you are on #{layout_name} page"
-      content_tag(:p, source_greeting, class: 'source-greeting')
+      source_greeting = "Thanks for visiting me from #{session[:source].capitalize}, feel free to #{ link_to 'contact me', contact_path }"
+      content_tag(:div, source_greeting.html_safe, class: styles)
     end
   end
 
