@@ -11,6 +11,7 @@
     <% @set_sidebar_topics.each do |topic| %>
       <p><%= link_to topic.title, topic_path(topic) %></p>
     <% end %>
+    <span><%= link_to 'See all topics', topics_path %></span>
   </div>
 
   <div class="p-3">
