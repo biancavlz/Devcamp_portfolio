@@ -24,13 +24,14 @@ User.create!(
 
 puts "1 regular user created"
 
-3.times do |topic|
+topics_titles = ['Ruby', 'Ruby On Rails','JavaScript', 'HTML', 'CSS' ]
+topics_titles.each do |title|
   Topic.create!(
-    title: "topic #{topic}"
+    title: "#{title}"
   )
 end
 
-puts "3 topics created"
+puts "5 topics created"
 
 10.times do |blog|
   Blog.create!(
@@ -48,14 +49,15 @@ end
 
 puts "10 blog post created"
 
-5.times do |skill|
+skills = ['Ruby', 'Ruby On Rails','JavaScript', 'HTML', 'CSS', 'MySQL' ]
+skills.each_with_index do |skill, index|
   Skill.create!(
-    title: "Ruby on rails",
-    percent_utilized: 35
+    title: "#{skill}",
+    percent_utilized: index * 20
   )
 end
 
-puts "5 skills created"
+puts "6 skills created"
 
 8.times do |prortfolio_item|
   Portfolio.create!(
@@ -91,9 +93,10 @@ end
 
 puts "9 porfolios created"
 
-3.times do |technology|
+technologies = ['Ruby', 'Ruby On Rails','JavaScript']
+technologies.each do |technology|
   Portfolio.last.technologies.create!(
-    name: "Technology #{technology}"
+    name: "#{technology}"
   )
 end
 
