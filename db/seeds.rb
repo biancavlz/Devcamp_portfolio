@@ -53,7 +53,7 @@ skills = ['Ruby', 'Ruby On Rails','JavaScript', 'HTML', 'CSS', 'MySQL' ]
 skills.each_with_index do |skill, index|
   Skill.create!(
     title: "#{skill}",
-    percent_utilized: index * 20
+    percent_utilized: (index + 1) * 20
   )
 end
 
