@@ -1,9 +1,16 @@
-<header class="masthead mb-auto">
-  <div class="inner">
-    <h3 class="masthead-brand">Bianca Velázquez</h3>
+<header class="blog-header py-2">
+  <div class="row flex-nowrap justify-content-center">
+    <div class="col-8 pt-1">
+      <h3 class="masthead-brand">Bianca Velázquez</h3>
+    </div>
+    
+    <div class="login col-4 d-flex justify-content-end align-items-center">
+      <%= login_helper 'btn btn-sm btn-outline-light session' %>
+    </div>
+  </div>
+  <div class="row justify-content-center">
     <nav class="nav nav-masthead justify-content-center app-nav">
       <%= nav_helper "nav-link", "span" %>
-      <%= login_helper 'btn btn-sm btn-outline-light session' %>
     </nav>
   </div>
 </header>
