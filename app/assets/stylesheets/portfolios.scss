@@ -23,6 +23,16 @@ h6, .h6 {
 /*
  * Header
  */
+.brand-name {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.login {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
 .masthead {
   margin-bottom: 2rem;
 }
@@ -107,9 +117,4 @@ footer p {
 
 .new-portfolio {
   margin-bottom: 10px;
-}
-
-.session {
-  margin-right: 10px;
-  margin-top: 10px; 
 }
