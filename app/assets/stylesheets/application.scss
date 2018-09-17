@@ -65,6 +65,7 @@ h6, .h6 {
 
 .masthead-brand {
   margin-bottom: 0;
+  text-align: left;
 }
 
 .nav-masthead .nav-link {
@@ -98,7 +99,15 @@ h6, .h6 {
   }
 }
 
+.login {
+  padding-left: 0px;
+  padding-right: 0px;
+}
 
+.brand-name {
+  padding-left: 0px;
+  padding-right: 0px;
+}
 /*
  * Cover
  */
@@ -148,7 +157,7 @@ h6, .h6 {
   float: none;
  }
 
- .app-nav span {
+ .app-nav div {
   margin-left: 10px;
   margin-right: 10px;
   margin-top: 10px;
