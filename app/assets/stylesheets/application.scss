@@ -148,7 +148,17 @@ h6, .h6 {
  .app-nav span {
   margin-left: 15px;
   margin-right: 15px;
+  margin-top: 10px;
  }
+
+ .nav-header {
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 0.7rem;
+}
+
+.session {
+  margin-left: 10px;
+}
 
  #background {
   position: fixed;
@@ -194,8 +204,4 @@ h6, .h6 {
 .app-card-container .social-links > a {
   color: white;
   font-size: 2em;
-}
-
-.session {
-  margin-right: 10px;
 }
