@@ -20,7 +20,7 @@
       <h1><%= @portfolio_item.title %></h1>
       <hr>
       <em><%= @portfolio_item.subtitle %></em>
-      <p><%= @portfolio_item.body %></p>
+      <p><%= markdown @portfolio_item.body %></p>
       <hr>
       <h2>Technologies used:</h2>
       
