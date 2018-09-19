@@ -11,7 +11,9 @@
   <div class="p-3">
     <h4 class="font-italic">Topics</h4>
     <% @set_sidebar_topics.each do |topic| %>
-      <p><%= link_to topic.title, topic_path(topic) %></p>
+      <div>
+        <%= link_to topic.title, topic_path(topic), class: "badge badge-pill badge-info" %>
+      </div>
     <% end %>
     <span><%= link_to 'See all topics', topics_path %></span>
   </div>
