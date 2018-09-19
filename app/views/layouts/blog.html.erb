@@ -23,9 +23,11 @@
     <main role="main" class="container">
       <div class="row">
         <div class="col-md-8 blog-main">
-          <%= render 'shared/blog_masthead' %>
-          <%= yield %>
-          <%= alerts %>
+          <div class="container">
+            <%= render 'shared/blog_masthead' %>
+            <%= yield %>
+            <%= alerts %>
+          </div>
         </div>
 
         <%= render 'shared/blog_sidebar' %>
