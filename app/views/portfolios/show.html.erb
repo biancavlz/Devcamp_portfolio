@@ -25,7 +25,7 @@
       <h2>Technologies used:</h2>
       
       <% @portfolio_item.technologies.each do |t| %>
-        <p><%= t.name %></p>
+        <span class="badge badge-pill badge-info"><%= t.name %></span>
       <% end %>
     </div>
   </div>
