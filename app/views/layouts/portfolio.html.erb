@@ -19,12 +19,13 @@
       <%= render 'shared/portfolio_nav' %>
     </div>
 
-    <main role="main" class="container">
+    <main role="main">
       <%= render 'shared/portfolio_masthead' unless logged_in?(:side_admin) %>
       <%= yield %>
-      <%= alerts %>  
+      <%= alerts %>
+      <div class="col-12 d-flex justify-content-center align-items-center">
+        <%= render 'shared/application_footer' %>
+      </div>
     </main>
-
-    <%= render 'shared/portfolio_footer' %>
   </body>
 </html>
