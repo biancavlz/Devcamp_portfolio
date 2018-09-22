@@ -23,7 +23,8 @@
       <%= render 'shared/portfolio_masthead' unless logged_in?(:side_admin) %>
       <%= yield %>
       <%= alerts %>
-      <div class="col-12 d-flex justify-content-center align-items-center">
+      <p><%= link_to "Back to top", '#', class: "link-footer d-flex justify-content-center" %></p>
+      <div class="d-flex text-muted justify-content-center">
         <%= render 'shared/application_footer' %>
       </div>
     </main>

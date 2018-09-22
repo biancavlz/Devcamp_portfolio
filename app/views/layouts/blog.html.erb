@@ -31,9 +31,11 @@
         </div>
 
         <%= render 'shared/blog_sidebar' %>
-
-        <div class="col-12 d-flex justify-content-center align-items-center">
-          <%= render 'shared/application_footer' %>
+        <div class="container p-0">
+          <p><%= link_to "Back to top", '#', class: "link-footer d-flex justify-content-center" %></p>
+          <div class="d-flex text-muted justify-content-center">
+            <%= render 'shared/application_footer' %>
+          </div>
         </div>
       </div>
     </main>
