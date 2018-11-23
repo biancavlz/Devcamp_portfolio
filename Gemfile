@@ -72,5 +72,7 @@ gem 'gritter', '~> 1.2'
 gem 'redis', '~> 4.0', '>= 4.0.2'
 gem 'redcarpet', '~> 3.4'
 gem 'coderay', '~> 1.1', '>= 1.1.2'
+gem "rack", ">= 2.0.6"
+gem "loofah", ">= 2.2.3"
 
 ruby '2.4.0'
