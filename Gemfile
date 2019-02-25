@@ -57,7 +57,7 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'friendly_id', '~> 5.1.0'
 gem 'devise', '~> 4.4', '>= 4.4.3'
-gem 'bootstrap', '~> 4.1.3'
+gem 'bootstrap', '>= 4.3.1'
 gem 'jquery-rails'
 gem 'copyright_renderer_tool', git: "https://github.com/biancavlz/copyright_renderer_tool"
 gem 'petergate', '~> 1.8', '>= 1.8.1'
