@@ -8,7 +8,7 @@ gem 'rails', '~> 5.2.0'
 # Use postgresql as the database for Active Record
 gem 'pg', '>= 0.18', '< 2.0'
 # Use Puma as the app server
-gem 'puma', '~> 3.11'
+gem 'puma', '>= 3.12.2'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -56,7 +56,7 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'friendly_id', '~> 5.1.0'
-gem 'devise', '~> 4.4', '>= 4.4.3'
+gem 'devise', '~> 4.7'
 gem 'bootstrap', '>= 4.3.1'
 gem 'jquery-rails'
 gem 'copyright_renderer_tool', git: "https://github.com/biancavlz/copyright_renderer_tool"
@@ -73,7 +73,7 @@ gem 'gritter', '~> 1.2'
 gem 'redis', '~> 4.0', '>= 4.0.2'
 gem 'redcarpet', '~> 3.4'
 gem 'coderay', '~> 1.1', '>= 1.1.2'
-gem "rack", ">= 2.0.6"
-gem "loofah", ">= 2.2.3"
+gem 'rack', '>= 2.0.8'
+gem 'loofah', '>= 2.3.1'
 
 ruby '2.4.0'
